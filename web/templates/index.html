@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resets.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Discord Music Box</title>
+</head>
+<body>
+<main class="sectionWrapper">
+    <section class="sectionContainer">
+        <img src="https://placehold.co/600x400" alt="Just a placeholder" class="imageThumbnail">
+
+        <div class="player">
+            <div class="playerContainer">
+                <div class="playBar">
+                    <img src="{{ url_for('static', filename='images/PlaylistShuffle.svg') }}"
+                         alt="Playlist Shuffle Icon">
+                    <div class="playAction">
+                        <img src="{{ url_for('static', filename='images/PlayerPrevious.svg') }}"
+                             alt="Player Previous Icon">
+                        <img src="{{ url_for('static', filename='images/PlayerPlay.svg') }}" alt="Player Play Icon">
+                        <img src="{{ url_for('static', filename='images/PlayerNext.svg') }}" alt="Player Next Icon">
+                    </div>
+                    <img src="{{ url_for('static', filename='images/PlaylistRepeatList.svg') }}"
+                         alt="Playlist RepeatList Icon">
+                </div>
+
+                <div class="songDurationContainer">
+                    <div class="songDuration">
+                        <p>0:00</p>
+                        <p>4:32</p>
+                    </div>
+                    <div class="songDurationBar">
+                        <div class="songDurationBarActiv"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
