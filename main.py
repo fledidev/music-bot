@@ -14,6 +14,5 @@ def hello_world():
 if __name__ == '__main__':
     load_dotenv()
     bot.discord_bot.run_bot(os.getenv('DISCORD_API_KEY'))
+
     app.run(debug=True)
-
-
